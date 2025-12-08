@@ -4,16 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza Hash</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- header -->
-    <header>
+    <header class="header">
       <div>
         <a href="#"
-          ><img src="images/logo.jpg" alt="Logo da Pizzaria PizzaHash"
+          ><img
+            class="logo"
+            src="images/logo.jpg"
+            alt="Logo da Pizzaria PizzaHash"
         /></a>
       </div>
-      <nav>
+      <nav class="navbar">
         <a href="#home">home</a>
         <a href="#about">sobre</a>
         <a href="#menu">menu</a>
@@ -31,25 +35,27 @@
           <ion-icon name="cart"></ion-icon>
         </div>
         <div>
-          <ion-icon name="menu"></ion-icon>
+          <ion-icon name="menu" id="btn-menu"></ion-icon>
         </div>
       </div>
     </header>
 
     <!-- home -->
     <section class="home" id="home">
-      <h1>Bem vindo à PizzaHash!</h1>
-      <p>
-        Descubra o sabor autêntico das nossas pizzas artesanais, preparadas com
-        ingredientes frescos e de alta qualidade.
-      </p>
-      <p>Venha experimentar uma experiência gastronômica inesquecível!</p>
-      <button>Faça seu Pedido!</button>
+      <div class="home-content">
+        <h1>Bem vindo à PizzaHash!</h1>
+        <p>
+          Descubra o sabor autêntico das nossas pizzas artesanais, preparadas
+          com ingredientes frescos e de alta qualidade.
+        </p>
+        <p>Venha experimentar uma experiência gastronômica inesquecível!</p>
+        <button class="btn">Faça seu Pedido!</button>
+      </div>
     </section>
 
     <!-- sobre -->
     <section class="about" id="about">
-      <h2><span>Sobre</span> nós</h2>
+      <h2 class="heading"><span>Sobre</span> nós</h2>
       <div><img src="images/sobre.jpg" alt="Desenho Pizzaria" /></div>
       <div>
         <h3>O que torna a PizzaHash única?</h3>
@@ -65,56 +71,56 @@
           massas incrivelmente leves e crocantes, e nossos molhos são feitos a
           partir de tomates frescos e especiarias únicas.
         </p>
-        <button>Saiba Mais</button>
+        <button class="btn">Saiba Mais</button>
       </div>
     </section>
 
     <!-- menu -->
     <section class="menu" id="menu">
-      <h2>Nosso <span>Menu</span></h2>
+      <h2 class="heading">Nosso <span>Menu</span></h2>
       <div class="box-card">
         <div class="card">
           <img src="images/pizza_item_1.jpg" alt="Explosão de Pepperoni" />
           <h5>Explosão de Pepperoni</h5>
           <p>R$ 55,99 <span>R$ 60,99</span></p>
-          <button>Adicionar ao Carrinho</button>
+          <button class="btn">Adicionar ao Carrinho</button>
         </div>
         <div class="card">
           <img src="images/pizza_item_2.jpg" alt="Aventuras Vegetais" />
           <h5>Aventuras Vegetais</h5>
           <p>R$ 45,99 <span>R$ 60,99</span></p>
-          <button>Adicionar ao Carrinho</button>
+          <button class="btn">Adicionar ao Carrinho</button>
         </div>
         <div class="card">
           <img src="images/pizza_item_3.jpg" alt="Mediterrânea Delícia" />
           <h5>Mediterrânea Delícia</h5>
           <p>R$ 75,99 <span>R$ 80,99</span></p>
-          <button>Adicionar ao Carrinho</button>
+          <button class="btn">Adicionar ao Carrinho</button>
         </div>
         <div class="card">
           <img src="images/pizza_item_4.jpg" alt="Promodoro do Campo" />
           <h5>Promodoro do Campo</h5>
           <p>R$ 45,99 <span>R$ 50,99</span></p>
-          <button>Adicionar ao Carrinho</button>
+          <button class="btn">Adicionar ao Carrinho</button>
         </div>
         <div class="card">
           <img src="images/pizza_item_5.jpg" alt="Lusitana Colorida" />
           <h5>Lusitana Colorida</h5>
           <p>R$ 65,99 <span>R$ 70,99</span></p>
-          <button>Adicionar ao Carrinho</button>
+          <button class="btn">Adicionar ao Carrinho</button>
         </div>
         <div class="card">
           <img src="images/pizza_item_6.jpg" alt="Saborosa Lava" />
           <h5>Saborosa Lava</h5>
           <p>R$ 85,99 <span>R$ 100,99</span></p>
-          <button>Adicionar ao Carrinho</button>
+          <button class="btn">Adicionar ao Carrinho</button>
         </div>
       </div>
     </section>
 
     <!-- combos e promocoes -->
     <section class="products" id="products">
-      <h2>Combos e <span>Promoções</span></h2>
+      <h2 class="heading">Combos e <span>Promoções</span></h2>
       <div class="box-card">
         <div class="card">
           <div>
@@ -201,7 +207,7 @@
 
     <!-- avaliação -->
     <section class="review" id="review">
-      <h2>O que nossos <span>clientes dizem</span></h2>
+      <h2 class="heading">O que nossos <span>clientes dizem</span></h2>
       <div class="box-card">
         <div class="card">
           <p>
@@ -270,7 +276,7 @@
     <!-- rodapé -->
     <footer>
       <div>
-        <h4>Pizza<span>Hash</span></h4>
+        <h4 class="heading-footer">Pizza<span>Hash</span></h4>
         <ul>
           <li><a href="#about">Sobre Nós</a></li>
           <li><a href="#menu">Menu</a></li>
