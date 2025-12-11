@@ -18,12 +18,11 @@
   outline: none;
   border: none;
   text-decoration: none;
-  /* text-transform: capitalize; */
   transition: 0.2s linear;
 }
 
 html {
-  font-size: 62.5 12%;
+  font-size: 62.5;
   overflow-x: hidden;
   scroll-padding-top: 9rem;
   scroll-behavior: smooth;
@@ -47,12 +46,13 @@ body {
 }
 
 section {
-  padding: 2rem 12%;
+  padding: 1rem 10rem;
 }
 
 h1 {
   font-size: 3.4rem;
   text-transform: uppercase;
+  text-align: center;
 }
 
 h3 {
@@ -111,7 +111,7 @@ a:hover {
   flex: col;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 12%;
+  padding: 1rem 10rem;
   border-bottom: var(--border);
   position: fixed;
   top: 0;
@@ -165,6 +165,7 @@ a:hover {
   min-height: 70vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   background: url(images/home.jpg) no-repeat;
   background-size: cover;
   background-position: center;
@@ -183,13 +184,12 @@ a:hover {
 }
 
 .home-content {
-  max-width: 40%;
   position: relative;
   z-index: 2;
   display: flex;
   flex-flow: column;
   gap: 1.5rem;
-  align-items: start;
+  align-items: center;
   justify-content: center;
 }
 
@@ -254,7 +254,6 @@ a:hover {
 
 .card-image {
   width: 20rem;
-  height: 20rem;
 }
 
 .card-icons {
@@ -291,7 +290,6 @@ a:hover {
 .review .card-paragraph {
   font-size: 0.9rem;
   font-weight: 400;
-  /* width: 90%; */
   text-align: justify;
 }
 
@@ -328,7 +326,7 @@ a:hover {
 .footer-columns {
   display: grid;
   flex-flow: column;
-  grid-template-columns: repeat(auto-fit, minmax(20.5rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 1.5rem;
   align-items: start;
   padding: 2rem 12%;
@@ -354,16 +352,41 @@ a:hover {
 }
 
 /* Media Queries  */
-@media (max-width: 1400px) {
-  section {
-    padding: 2rem;
+@media (max-width: 1200px) {
+  .header,
+  section,
+  .footer {
+    padding: 1rem 5rem;
   }
 
-  .home {
+  .about-container {
+    flex-flow: column;
     align-items: center;
   }
 
-  .home-content {
-    max-width: 100%;
+  .about-content {
+    align-items: center;
+  }
+  .about-content h3,
+  .about-content p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .header,
+  section,
+  .footer {
+    padding: 1rem 1rem;
+  }
+
+  .navbar {
+    display: none;
+  }
+}
+
+@media (max-width: 556px) {
+  .card-image {
+    width: 80vw;
   }
 }
